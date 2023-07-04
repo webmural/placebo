@@ -30,12 +30,24 @@
 }
 
 .vacuum {
-  writing-mode: vertical-rl;
   box-shadow: -3em 0 5rem 0 turquoise;
+}
+
+.vallee {
+  writing-mode: vertical-rl;
 }
 
 .deo { font-size: 1.236em }
 .dua { font-size: 1.618em }
+
+:root {
+  --tape-remix: conic-gradient(
+    var(--tape-play),
+    var(--tape-watt),
+    var(--tape-watt),
+    var(--tape-play)
+  );
+}
 
 ::selection {
   color: magenta;
@@ -91,13 +103,4 @@ mark {
 h1 {
   font-size: max(3ch, 3vmax);
   margin: 0;
-}
-
-:root {
-  --tape-remix: conic-gradient(
-    var(--tape-play),
-    var(--tape-watt),
-    var(--tape-watt),
-    var(--tape-play)
-  );
 }
